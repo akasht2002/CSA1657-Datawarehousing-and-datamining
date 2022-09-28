@@ -1,0 +1,37 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1
+Relation:     vote
+Instances:    435
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+=== Associator model (full training set) ===
+
+FPGrowth found 41 rules (displaying top 10)
+
+ 1. [el-salvador-aid=y, Class=republican]: 157 ==> [physician-fee-freeze=y]: 156   <conf:(0.99)> lift:(2.44) lev:(0.21) conv:(46.56) 
+ 2. [crime=y, Class=republican]: 158 ==> [physician-fee-freeze=y]: 155   <conf:(0.98)> lift:(2.41) lev:(0.21) conv:(23.43) 
+ 3. [religious-groups-in-schools=y, physician-fee-freeze=y]: 160 ==> [el-salvador-aid=y]: 156   <conf:(0.97)> lift:(2) lev:(0.18) conv:(16.4) 
+ 4. [Class=republican]: 168 ==> [physician-fee-freeze=y]: 163   <conf:(0.97)> lift:(2.38) lev:(0.22) conv:(16.61) 
+ 5. [adoption-of-the-budget-resolution=y, anti-satellite-test-ban=y, mx-missile=y]: 161 ==> [aid-to-nicaraguan-contras=y]: 155   <conf:(0.96)> lift:(1.73) lev:(0.15) conv:(10.2) 
+ 6. [physician-fee-freeze=y, Class=republican]: 163 ==> [el-salvador-aid=y]: 156   <conf:(0.96)> lift:(1.96) lev:(0.18) conv:(10.45) 
+ 7. [religious-groups-in-schools=y, el-salvador-aid=y, superfund-right-to-sue=y]: 160 ==> [crime=y]: 153   <conf:(0.96)> lift:(1.68) lev:(0.14) conv:(8.6) 
+ 8. [el-salvador-aid=y, superfund-right-to-sue=y]: 170 ==> [crime=y]: 162   <conf:(0.95)> lift:(1.67) lev:(0.15) conv:(8.12) 
+ 9. [crime=y, physician-fee-freeze=y]: 168 ==> [el-salvador-aid=y]: 160   <conf:(0.95)> lift:(1.95) lev:(0.18) conv:(9.57) 
+10. [el-salvador-aid=y, physician-fee-freeze=y]: 168 ==> [crime=y]: 160   <conf:(0.95)> lift:(1.67) lev:(0.15) conv:(8.02) 
